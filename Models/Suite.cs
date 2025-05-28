@@ -1,7 +1,11 @@
-namespace DesafioProjetoHospedagem.Models
+namespace _02_Sistema_De_Hospedagem_Hotel
 {
     public class Suite
     {
+        public string TipoSuite { get; set; }
+        public int Capacidade { get; set; }
+        public decimal ValorDiaria { get; set; }
+
         public Suite() { }
 
         public Suite(string tipoSuite, int capacidade, decimal valorDiaria)
@@ -10,9 +14,5 @@ namespace DesafioProjetoHospedagem.Models
             Capacidade = capacidade;
             ValorDiaria = valorDiaria;
         }
-
-        public string TipoSuite { get; set; }
-        public int Capacidade { get; set; }
-        public decimal ValorDiaria { get; set; }
     }
 }
